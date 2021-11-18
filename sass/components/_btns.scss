@@ -1,0 +1,114 @@
+.button{
+    min-width: 200px;
+    min-height: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+
+// ========================================================= HERO BUTTON =========================================== //
+.hero__button {
+    min-width: 200px;
+    min-height: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--accent);
+    color: var(--main-bg);
+}
+
+.hero__button--with-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--main-bg);
+}
+// ========================================================= FOOTER BUTTON =========================================== //
+.footer-button-submit {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border: none;
+
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+
+    cursor: pointer;
+}
+.footer-button-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 21px;
+    margin-right: 62px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+}
+
+.send-icon {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+}
+// ========================================================= PORTFOLIO BUTTONS =========================================== //
+
+.partfolio-buttons {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--secondary-bg);
+    border: transparent;
+    border-radius: 4px;
+    transition: color 250ms linear, background-color 250ms linear;
+        &:focus,
+        &:hover {
+            color: var(--main-bg);
+            background-color: var(--accent);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+// ========================================================= FORM-SUBMIT-BUTTON =========================================== //
+.form-submit-button {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background: #2196f3;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}  
+.form-button-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: #ffffff;
+}

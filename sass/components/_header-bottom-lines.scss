@@ -1,0 +1,40 @@
+.bottom-line{
+  &::after {
+    display: block;
+    content: '';
+    height: 4px;
+    width: 48px;
+    background-color: var(--accent);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+}
+.navigation-menu__bottom-line--long{
+    &::after {
+      display: block;
+      content: '';
+      height: 4px;
+      width: 48px;
+      background-color: var(--accent);
+      border-radius: 2px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+  }
+}
+
+  .navigation-menu__bottom-line--longer{
+    &::after {
+      display: block;
+      content: '';
+      height: 4px;
+      width: 78px;
+      background-color: var(--accent);
+      border-radius: 2px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+  }
+}
