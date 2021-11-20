@@ -131,6 +131,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent);
 }
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .logo {
+    padding: 16px 15px;
+  }
+}
 
 .logo--black {
   color: var(--title-text);
@@ -142,6 +147,10 @@ body {
 
 .page-header {
   border-bottom: 1px solid var(--header-borderline);
+}
+
+.navigation-block {
+  display: none;
 }
 
 .navigation-menu {

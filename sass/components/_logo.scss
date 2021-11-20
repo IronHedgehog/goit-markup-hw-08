@@ -10,7 +10,9 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--accent);
-
+    @media screen and (min-width:0px) and (max-width:767px){
+      padding: 16px 15px;
+    }
   }
   // =========================================================HEADER =======================//
 .logo--black {
