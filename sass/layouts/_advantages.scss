@@ -2,9 +2,7 @@
     padding: 60px 0px;
     // padding-top: 94px;
     // padding-bottom: 47px;
-    @media  screen and (min-width:480px){
-        padding:60px 0px;
-    }
+
 }
 .advantage-list {
     // display: flex;
@@ -36,14 +34,10 @@
 }
 
 .advantage-list__text {
-    max-width: 320px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--main-text);
-    @media screen and (min-width: 480px){
-        max-width: 450px;
-    }
 }

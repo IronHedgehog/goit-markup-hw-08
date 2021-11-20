@@ -100,23 +100,23 @@ body {
 }
 
 .sections {
-  padding: 94px 0px;
-}
-@media screen and (min-width: 480px) {
-  .sections {
-    padding: 60px 0px;
-  }
+  padding: 60px 0px;
 }
 
 .section-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text);
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
 }
 
 .logo {
@@ -409,11 +409,6 @@ body {
 .section-advantages {
   padding: 60px 0px;
 }
-@media screen and (min-width: 480px) {
-  .section-advantages {
-    padding: 60px 0px;
-  }
-}
 
 .advantage-list__item {
   min-width: 320px;
@@ -435,7 +430,6 @@ body {
 }
 
 .advantage-list__text {
-  max-width: 320px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -443,17 +437,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text);
 }
-@media screen and (min-width: 480px) {
-  .advantage-list__text {
-    max-width: 450px;
-  }
-}
 
 .advantage-list__item::before {
   display: block;
   content: "";
   height: 120px;
-  width: 98%;
+  width: 100%;
   margin-bottom: 20px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -664,18 +653,16 @@ body {
 }
 
 .clients-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: -28px;
+  margin-bottom: -30px;
 }
 
 .clients-list-item {
-  width: 170px;
+  display: inline-block;
+  width: calc(100% / 2 - 30px);
+  margin-left: 28px;
+  margin-bottom: 30px;
   height: 92px;
-}
-
-.clients-list-item + .clients-list-item {
-  margin-left: 30px;
 }
 
 .clients-link {
