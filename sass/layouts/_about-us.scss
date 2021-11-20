@@ -1,6 +1,12 @@
 .section-about-us {
     padding-top: 47px;
     padding-bottom: 94px;
+    @media screen and (max-width:1199px){
+      display: none;
+    }
+    @media screen and (min-width:1200px){
+      display: block;
+    }
   }
   .card-set{
     display: flex;
