@@ -3,8 +3,11 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 100%; 
+    overflow: hidden;
+    
     @media screen and (min-width: 480px){
         width: 480px;
+        overflow: visible;
     }
     @media screen and (min-width: 768px){
         width: 768px;
