@@ -34,6 +34,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -535,6 +536,10 @@ body {
   color: #ffffff;
 }
 
+.our-team-list {
+  text-align: center;
+}
+
 .team-title {
   margin-bottom: 10px;
   font-style: normal;
@@ -551,16 +556,13 @@ body {
   background-color: var(--main-bg);
 }
 
-.our-team-cards + .our-team-cards {
-  margin-left: 30px;
+.our-team-cards:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-/*  .our-team-cards:not(:last-child){
-margin-right: 30px;
-}*/
 .our-team-cards-text {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 37px;
 }
 
 .team-profession {
