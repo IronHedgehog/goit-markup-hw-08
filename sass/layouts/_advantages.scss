@@ -10,10 +10,6 @@
     @media screen and (min-width:768px){
         display: flex;
         flex-wrap: wrap;
-        margin-left: -30px;
-    }
-    @media screen and (min-width:1200px){
-        flex-direction: row;
     }
 }
 .advantage-list__item{
@@ -24,8 +20,11 @@
         &:not(:nth-last-child(-n+2)){
             margin-bottom: 30px;
         }
+        &:not(:nth-child(odd)){
+            margin-left:30px;
+        }
         flex-basis: calc(100% / 2 - 30px);
-        margin-left: 30px;
+        
     }
     @media screen and (min-width:1200px){
         flex-basis: calc(100% / 4 - 30px);
