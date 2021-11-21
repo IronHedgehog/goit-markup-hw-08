@@ -312,11 +312,33 @@ body {
 .hero {
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    padding: 118px 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero-container {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    min-width: 1600px;
+  }
 }
 
 .hero-bcg {
@@ -327,22 +349,15 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 0px) {
   .hero-bcg {
-    width: 100%;
-    overflow: visible;
     background-size: cover;
-    padding: 118px 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero-bcg {
-    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-bcg {
-    width: 1200px;
+    min-width: 1600px;
+    min-height: 600px;
   }
 }
 
@@ -350,18 +365,23 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  max-width: 700px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-bg);
 }
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 1199px) {
   .hero_title {
     font-size: 26px;
     line-height: calc(42 / 26);
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero_title {
+    font-size: 44px;
+    line-height: 1.4;
+    max-width: 700px;
   }
 }
 
