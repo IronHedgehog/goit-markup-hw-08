@@ -782,12 +782,29 @@ body {
   color: var(--soc-link-h);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social-list {
+    display: flex;
+    align-content: center;
+  }
+}
+
 .footer-social-container {
   align-content: center;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .footer-social-container {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-social-container {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-social-container {
+    margin-left: 70px;
   }
 }
 
@@ -907,14 +924,62 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .dabl {
+    display: flex;
+    align-items: baseline;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dabl {
+    display: flex;
+    align-items: baseline;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-conteiner {
+    display: flex;
+    align-items: baseline;
+    align-content: center;
+  }
+}
+
 .footer-logo-padding {
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .footer-logo-padding {
+    text-align: center;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo-padding {
+    text-align: start;
+    padding: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .address-container {
     text-align: center;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address-container {
+    margin-left: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin: 0px;
   }
 }
 
@@ -968,8 +1033,20 @@ body {
 .footer-form {
   align-content: center;
 }
+@media screen and (min-width: 768px) {
+  .footer-form {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: 93px;
+    text-align: start;
+  }
+}
 
 .footer-form-input {
+  display: block;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -984,6 +1061,20 @@ body {
   .footer-form-input {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    width: 358px;
+    display: inline-block;
   }
 }
 .footer-form-input:focus {

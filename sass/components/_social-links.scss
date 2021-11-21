@@ -41,15 +41,23 @@
   // ============================================ FOOTER ============================= //
   
   .footer-social-list {
-    // display: flex;
-    // align-content: center;
+    @media screen and (min-width:1200px){
+          display: flex;
+    align-content: center;
+    }
   }
   
   .footer-social-container {
     align-content: center;
-    // margin-left: 70px;
+    
     @media screen and (min-width:0px) and (max-width:767px){
       margin-bottom: 60px;
+    }
+    @media screen and (min-width:768px){
+      margin-left: 165px;
+    }
+    @media screen and (min-width:1200px){
+      margin-left: 70px;
     }
   }
   
