@@ -84,6 +84,9 @@
     border: transparent;
     border-radius: 4px;
     transition: color 250ms linear, background-color 250ms linear;
+    @media screen and(min-width:0px) and (max-width:767px){
+        // height: 38px;
+    }
         &:focus,
         &:hover {
             color: var(--main-bg);

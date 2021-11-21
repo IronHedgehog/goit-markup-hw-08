@@ -1,8 +1,7 @@
 .logo {
     // padding-top: 24px;
     // padding-bottom: 25px;
-    // margin-right: 93px;
-    text-align: center;
+    // text-align: center;
     padding-bottom: 20px;
     font-family: Raleway;
     font-weight: bold;
@@ -11,9 +10,14 @@
     letter-spacing: 0.03em;
     color: var(--accent);
     @media screen and (min-width:0px) and (max-width:767px){
-      padding: 16px 15px;
+      padding: 16px 0px;
+    }
+    @media screen and (min-width:768px){
+          margin-right: 88px;
+          padding: 26px 0;
     }
   }
+
   // =========================================================HEADER =======================//
 .logo--black {
     color: var(--title-text);

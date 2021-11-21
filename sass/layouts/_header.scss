@@ -3,13 +3,16 @@
 }
 .navigation-block{
   display: none;
+  @media screen and (min-width:768px){
+    display: flex;
+  }
 }
 .navigation-menu{
   display: flex;
 }
   .navigation-menu__list {
     display: flex;
-    margin-right: 305px;
+    margin-right: 60px;
     list-style: none;
     font-style: normal;
     font-weight: 500;
@@ -17,6 +20,9 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text);
+    @media screen and (min-width:1200px){
+      margin-right: 305px;
+    }
   }
   
   .navigation-menu__item {
@@ -33,4 +39,3 @@
     padding-bottom: 32px;
     color: var(--title-text);
   }
-    
