@@ -82,7 +82,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  overflow-x: hidden;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -103,6 +102,11 @@ body {
 
 .sections {
   padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .sections {
+    padding: 94px 0px;
+  }
 }
 
 .section-title {
@@ -502,16 +506,50 @@ body {
 .section-advantages {
   padding: 60px 0px;
 }
-
-.advantage-list__item {
-  min-width: 320px;
+@media screen and (min-width: 1200px) {
+  .section-advantages {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
-.advantage-list__item:not(:last-child) {
-  margin-bottom: 30px;
+
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage-list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .advantage-list__item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  .advantage-list__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+  .advantage-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantage-list__title {
-  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -520,6 +558,11 @@ body {
   text-transform: uppercase;
   color: var(--title-text);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .advantage-list__title {
+    text-align: center;
+  }
 }
 
 .advantage-list__text {
@@ -547,6 +590,16 @@ body {
   .advantage-list__item::before {
     margin-bottom: 30px;
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage-list__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage-list__item::before {
+    width: 270px;
   }
 }
 
