@@ -1,8 +1,5 @@
 .logo {
-    // padding-top: 24px;
-    // padding-bottom: 25px;
-    // text-align: center;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
@@ -16,6 +13,12 @@
           margin-right: 88px;
           padding: 26px 0;
     }
+    @media screen and (min-width:1200px){
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+      text-align: center;
+      }
   }
 
   // =========================================================HEADER =======================//
