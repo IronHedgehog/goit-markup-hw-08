@@ -154,9 +154,13 @@
     font-size: 6px;
   line-height: 10px;
   }
-  @media screen and( min-width:340px) and (max-width:479px){
+  @media screen and( min-width:340px) and (max-width:419px){
     font-size: 7px;
     line-height: 10px;
+  }
+  @media screen and (min-width:420px) and (max-width:479px){
+    font-size: 9px;
+    line-height: 12px;
   }
   @media screen and (min-width:480px){
     font-size: 12px;
