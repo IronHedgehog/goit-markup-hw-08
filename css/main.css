@@ -1324,6 +1324,11 @@ body {
   background: var(--main-bg);
   border: 1px solid var(--partfolio-border);
 }
+@media screen and (max-width: 767px) {
+  .portfolio-list-item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .portfolio-list-item {
     width: 354px;
