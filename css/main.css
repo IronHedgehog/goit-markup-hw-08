@@ -356,6 +356,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+  z-index: 999;
 }
 
 @media screen and (min-width: 768px) {
@@ -407,6 +408,12 @@ body {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 400px) {
+  .mob-menu__tel--bottom {
+    font-size: 27px;
+  }
+}
+
 .mob-menu__mail--bottom {
   font-weight: 500;
   font-size: 24px;
@@ -428,6 +435,12 @@ body {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 400px) {
+  .mob-menu__item--social:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
 .mob-menu__link--social {
   font-weight: 500;
   font-size: 18px;
@@ -435,6 +448,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent);
   padding-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .mob-menu__link--social {
+    font-size: 13px;
+  }
 }
 
 .hero {
