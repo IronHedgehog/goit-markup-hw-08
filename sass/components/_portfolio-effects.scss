@@ -19,7 +19,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -28,4 +28,7 @@
   padding: 63px 24px;
   transform: translateY(100%);
   transition: transform 250ms linear;
+  @media screen and (min-width: 380px){
+    font-size: 18px;
+  }
 }
