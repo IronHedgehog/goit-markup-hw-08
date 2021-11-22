@@ -34,7 +34,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -347,21 +346,38 @@ body {
 .hero-bcg {
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../images/hero-bcg/hero.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 479px) {
   .hero-bcg {
-    background-size: cover;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../images/hero-bcg/mob/x1/hero__bcg--1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-bcg {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../images/hero-bcg/mob/x2/hero__bcg--2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-bcg {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../images/hero-bcg/tab/x1/hero__bcg--1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-bcg {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../images/hero-bcg/tab/x2/hero__bcg--2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-bcg {
-    min-width: 1200px;
-    min-height: 600px;
-    background-size: cover;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../images/hero-bcg/desk/x1/hero__bcg--1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-bcg {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../images/hero-bcg/desk/x2/hero__bcg--2x.jpg);
   }
 }
 
